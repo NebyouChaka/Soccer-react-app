@@ -1,11 +1,36 @@
 import React from "react";
-import "../App.css";
+import "../App";
+import { Link } from "react-router-dom";
+import ContactForm from "../contactForm";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <h1>Football App ⚽️</h1>
-    </div>
+    <nav className="navbar">
+      <div className="navtext">
+        <h1>Football App ⚽</h1>
+      </div>
+      <div className="nav-links">
+        <li>
+          <Link className="links" to="/">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link className="links" to="/Standings">
+            Standings
+          </Link>
+        </li>
+        <li>
+          <Link className="links" to="/contactForm">
+            Subscription Option
+          </Link>
+        </li>
+
+        {/* <Link to="/">Home</Link>
+          <Link to="/Standings"> Standings</Link>
+          <Link to="/contactForm"> Contact</Link> */}
+      </div>
+    </nav>
   );
 };
 

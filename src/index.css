@@ -11,3 +11,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1{
+  text-align: center;
+  margin: 0px auto;
+  padding-bottom: 10px;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+h2{
+  margin: 0px;
+}
+#formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://www.noaa.gov/sites/default/files/styles/landscape_width_1275/public/legacy/image/2019/Jun/PHOTO-autumn%20scene%20of%20the%20Tidal%20Basin%20with%20the%20Jefferson%20Memorial-iStock_86221783-102816-1445x950-homepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0em;
+  
+}
+#form{
+  width: 50em;
+  height: 50em;
+  background-image: linear-gradient(to right, #64B2CC 30%, #657980);
+  
+  /* margin-bottom: -600px; */
+}
+fieldset{
+  font-size: 20px;
+  border-width: 5px;
+  padding: 30px 30px 30px 30px;
+  border-color: #fbefef;
+  justify-content: center;
+  height: 46rem;
+}
+input{
+  margin: 10px 10px 10px 0px;
+  padding: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+#fullName{
+  display: flex;
+  flex-wrap: wrap;
+}
+#fullName input{
+  flex-grow: 1;
+}
+#otherInputs{
+  display: flex;
+  flex-wrap: wrap;
+}
+#otherInputs input{
+  width: 100%;
+}
+#submit{
+  display: block;
+  margin: 0 auto;
+  padding: 12px 0px;
+  width: 200px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #3E6F80;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (min-width: 320px) and (min-width: 480px){
+#form{
+  width: 50em;
+  height: 50em;
+  background-image: linear-gradient(to right, #64B2CC 30%, #657980);
+
+  
+}
+
+}

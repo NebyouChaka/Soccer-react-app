@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../App.css";
+import "../App";
 import Leagues from "./Leagues";
 import Standings from "./Standings";
 
@@ -16,6 +16,7 @@ const Content = () => {
           <h2 style={{ color: !active ? "#c20114" : null }}>Standings</h2>
         </div>
       </div>
+
       {active ? <Leagues /> : <Standings />}
     </div>
   );
