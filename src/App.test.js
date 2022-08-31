@@ -36,13 +36,6 @@ test('matches snapshot', () =>{
   const tree = renderer.create(<Standings standings={standings} />).toJSON();
   expect(tree).toMatchSnapshot();
 })
-describe("Content input", () => {
-  it("Should capture email correctly ", () => {
-    const emailForm = new emailForm({ id: "email" });
-    const tree = renderer.create(<ContactForm emailForm={emailForm} />).toJSON();
-    
-    expect(emailForm.ContactForm).toBe("abc123@gmail.Com");
-  });
-});
+// git status
 
 
