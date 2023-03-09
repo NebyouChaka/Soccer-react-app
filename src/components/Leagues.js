@@ -29,6 +29,7 @@ const Leagues = () => {
         <div key={league.id} className="league-div">
           <img src={league.logos.light} alt="#" onClick={handleClick} />
           <h4>{league.name}</h4>
+          
         </div>
       ))}
     </div>
